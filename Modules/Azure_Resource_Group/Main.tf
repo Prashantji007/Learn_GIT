@@ -5,5 +5,5 @@ resource "azurerm_resource_group" "RG" {
 
 resource "azurerm_resource_group" "RG1" {
   name = "${prefix}-rg"
-  location = "centralindia"
+  location = "canadacentral"
 }
