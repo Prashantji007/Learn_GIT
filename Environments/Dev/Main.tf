@@ -5,6 +5,7 @@ module "rg" {
 locals {
   location = "delhi"
   Rule = "Pushpa 2"
+  Rule1 = "Pushpa 3"
 }
 
 resource "azurerm_linux_virtual_machine" "vm" {
