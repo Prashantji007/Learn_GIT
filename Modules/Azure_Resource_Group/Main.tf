@@ -1,12 +1,12 @@
 resource "azurerm_resource_group" "RG" {
-  name     = "${prefix}-rg"
+  name     = "${var.prefix}-rg"
   location = "westus"
 }
 
 resource "azurerm_linux_virtual_machine" "vm" {
   name                = "veerv"
   location            = "centralindia"
-  resource_group_name = "${prefix}-rg"
+  resource_group_name = "${var.prefix}-rg"
   size                = "Standard_B2s"
   admin_username      = "admin"
   admin_password      = "Test@123"
