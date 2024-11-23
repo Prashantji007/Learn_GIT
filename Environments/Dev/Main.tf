@@ -5,6 +5,7 @@ module "rg" {
 locals {
   location = "delhi"
   Rule = "Pushpa 2"
+  Rule3 = "tree"
   Rule1 = "Pushpa 3"
 }
 
