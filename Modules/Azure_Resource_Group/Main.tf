@@ -37,7 +37,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
   admin_username      = "kitead"
   admin_password      = "Test@123"
   disable_password_authentication = false
-  network_interface_ids = azurerm_network_interface.nic.id
+  network_interface_ids = [azurerm_network_interface.nic.id]
 
   os_disk {
     caching              = "ReadWrite"
