@@ -31,8 +31,8 @@ resource "azurerm_network_interface" "nic" {
 
 resource "azurerm_linux_virtual_machine" "vm" {
   name                = "veerv"
-  location            = "centralindia"
-  resource_group_name = "${var.prefix}-rg"
+  location            = azurerm_resource_group.RG.location
+  resource_group_name = azurerm_resource_group.RG.name
   size                = "Standard_B2s"
   admin_username      = "kitead"
   admin_password      = "Test@123"
@@ -58,5 +58,5 @@ resource "azurerm_storage_account" "sa" {
   location                 = "westus"
   account_replication_type = "GRS"
   account_tier             = "Standard"
-  resource_group_name      = "rg"
+  resource_group_name      = azurerm_resource_group.RG.name
 }
