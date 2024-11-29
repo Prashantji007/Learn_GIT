@@ -54,7 +54,7 @@ resource "azurerm_linux_virtual_machine" "vm" {
 
 
 resource "azurerm_storage_account" "sa" {
-  name                     = "sa1"
+  name                     = "sa17987097"
   location                 = "westus"
   account_replication_type = "GRS"
   account_tier             = "Standard"
