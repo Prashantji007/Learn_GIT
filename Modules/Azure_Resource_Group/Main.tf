@@ -8,6 +8,12 @@ resource "azurerm_resource_group" "SRG" {
   location = "West japan"
 }
 
+resource "azurerm_resource_group" "SRG" {
+  name = "singhvi_RG"
+  location = "East japan"
+}
+
+
 resource "azurerm_virtual_network" "vn" {
   name                = "${var.prefix}-network"
   address_space       = ["10.0.0.0/16"]
