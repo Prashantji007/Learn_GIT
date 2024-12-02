@@ -14,6 +14,28 @@ resource "azurerm_resource_group" "SRG" {
 }
 
 
+
+resource "azurerm_resource_group" "RG" {
+  name     = "${var.prefix}-prashant-rg"
+  location = "canadaeast"
+}
+
+resource "azurerm_resource_group" "RG" {
+  name     = "${var.prefix}-prashant-rg1"
+  location = "canadawest"
+}
+
+
+resource "azurerm_resource_group" "RG" {
+  name     = "${var.prefix}-prashant-rg2"
+  location = "centralindia"
+}
+
+resource "azurerm_resource_group" "RG" {
+  name     = "${var.prefix}-prashant-rg3"
+  location = "dubaieast"
+}
+
 resource "azurerm_virtual_network" "vn" {
   name                = "${var.prefix}-network"
   address_space       = ["10.0.0.0/16"]
